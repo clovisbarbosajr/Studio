@@ -1,0 +1,5 @@
+{
+  "name": "INWISE STUDIO - Gerador de Imagens com Gemini",
+  "description": "Uma aplicação de geração de imagens profissional usando a API Gemini para criar e editar visuais impressionantes a partir de prompts de texto e imagens de referência.",
+  "requestFramePermissions": []
+}

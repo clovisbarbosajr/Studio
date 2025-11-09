@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INWISE STUDIO — Gerador de Imagens</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #00CFFF;
+      --brand-weak: rgba(0, 207, 255, .35);
+      --bg: #0a1a33;
+      --panel: #102541;
+      --text: #fff;
+      --muted: rgba(255, 255, 255, .78);
+      --border: rgba(255, 255, 255, .12);
+      --r-lg: 16px;
+      --r-md: 12px;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(180deg, #0a1a33 0%, #081427 100%);
+      color: var(--text);
+      font-family: 'Inter', system-ui, Segoe UI, Roboto, Arial;
+    }
+    .glow::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: .9;
+      background: radial-gradient(420px 260px at var(--spot-x, 50%) var(--spot-y, 50%), rgba(0, 207, 255, .18), transparent 60%);
+    }
+    input[type="checkbox"] {
+      accent-color: var(--brand);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
